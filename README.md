@@ -31,17 +31,19 @@ node index.js [ -t|--auth-time AUTH_TIME ] [ -d|--ssl-dir SSL_DIR ] PORT
 ***
 
 
-
+***
 examples
-
+-----
 below example uses default authtime and directory
 
 node index.js 443
-
+-----
+-----
 below example uses 300 seconds as authtime and default ssl directory
 
 node index.js -t 300 443
-
+-----
+***
 
 
 Feel free to contact me if you have questions at alicangork@hotmail.com
