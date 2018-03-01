@@ -15,11 +15,13 @@ work.
 Has optional arguments, such as auth time(duration of life for a user session)
 and ssl-dir(directory in which key.pem and cert.pem reside).
 
-To run:
+To run
+
 npm install
 node index.js [ -t|--auth-time AUTH_TIME ] [ -d|--ssl-dir SSL_DIR ] PORT
-examples:
 
+
+examples
 
 below example uses default authtime and directory
 node index.js 443
