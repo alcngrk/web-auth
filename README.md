@@ -4,12 +4,13 @@ signed HTTPS certificate is not present browsers will end up warning users.
 
 
 Some functions need JSON objects to work. The listing is below:
-
+***
   Function: newUser. Triggers when put request at path '/users/:id' occurs.
+  
   
   Function: authorizeUser. Triggers when put request at path '/users/:id/auth'
               occurs.
-              
+***              
               
               
 There's further explanation to the code within comments.
