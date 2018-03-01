@@ -13,7 +13,6 @@ const sslDir = options.options.sslDir;
 const DB_URL = 'mongodb://localhost:27017/proj3';
 
 mongo.connect(DB_URL).
-  //then((db) => products.initProducts(db)).
   then(function(db) {
     console.log("* * * * * * * * * * * * * * * * * * * * * *");
     console.log("*OPTIONS:");

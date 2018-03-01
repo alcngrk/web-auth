@@ -220,7 +220,6 @@ function getUser(app)
     try
     {
       const id = request.params.id;
-      //const token = request.headers.authorization;
 
       //------------------------------------------------------------------------
       let token = request.headers.authorization;
@@ -269,7 +268,6 @@ function getUser(app)
                 delete resp.pw; delete resp.seshId; delete resp.sessionTime;
 
                 resp.status = "OK";
-                //resp.authToken = foundUser.authToken;
                 response.status(OK).send(resp);
               }).catch(function(err)
               {

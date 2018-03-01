@@ -149,19 +149,6 @@ Users.prototype.t_auth = function(path, user_Id, a_Token)
       if(foundUser.seshId === undefined)
       {
         reject(new Error(`No session for ${id}`));
-
-        /*let seshId = Math.floor(Math.random()*100000) + 1;
-        let authToken = Math.floor(Math.random()*100000) + 1;
-        while(seshId < 100000)
-              seshId = seshId*10;
-        while(authToken < 100000)
-              authToken = authToken*10;
-        seshId = String(seshId);
-        seshId = userId + "_" + seshId;
-        Users.prototype.getUserNoReject(userId, path).then(function(user)
-        {
-          resolve(Users.prototype.createSession(user, seshId, authToken, path));
-        });*/
       }
       else
         resolve(foundUser);
