@@ -1,13 +1,13 @@
 Simple, scalable and reusable authentication service. It uses HTTPS, if a valid
 signed HTTPS certificate is not present browsers will end up warning users.
-
+---
 Some functions need JSON objects to work. The listing is below:
 
   Function: newUser. Triggers when put request at path '/users/:id' occurs.
   
   Function: authorizeUser. Triggers when put request at path '/users/:id/auth'
               occurs.
-
+---
 There's further explanation to the code within comments.
 
 Requires key.pem and cert.pem files to work, without those project will not
